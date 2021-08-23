@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXTERNAL LINS START -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="assets/js/starjs/css/star-rating.min.css">
+    <link href="assets/js/starjs/themes/krajee-fas/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/js/starjs/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/star-rating.js" type="text/javascript"></script>
+
+    <!-- EXTERNAL LINS END -->
+    <title>Restaurant</title>
+  </head>
+
+  <body>
+    <!-- ==== SIDEBAR START ==== -->
+    <div id="sideBarId" class="sideBar">
+      <div class="d-flex flex-column">
+        <div id="closeSidebar" onclick="closeSidebar()" class="align-self-start">
+          <i class="fas fa-times h1"></i>
+        </div>
+        <ul class="list-unstyled ps-4">
+          <li onclick="closeSidebar()" class="mt-3">
+            <a class="text-decoration-underline text-dark fw-bold" href="about.html">
+              Join our network
+            </a>
+          </li>
+          <li onclick="closeSidebar()" class="mt-3">
+            <a class="text-decoration-underline text-dark fw-bold" href="contact.html">
+              Sign up or log in
+            </a>
+          </li>
+        </ul>
+        <ul class="d-inline-flex list-unstyled icons ps-4 mt-2">
+          <li onclick="closeSidebar()">
+            <a class="h5 mx-3" target="_blank" href="http://facebook.com/">
+              <i class="fab fa-twitter text-dark h3"></i>
+            </a>
+          </li>
+          <li onclick="closeSidebar()">
+            <a class="h5" target="_blank" href="https://twitter.com/">
+              <i class="fab fa-facebook-f text-dark h3"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ==== SIDEBAR END ==== -->
+
+    <!-- ==== SIDEBAR START ==== -->
+    <div id="sideBarFilter" class="sideBar">
+      <div class="d-flex flex-column">
+        <div id="closeSidebar" onclick="closeFilter()" class="align-self-start">
+          <i class="fas fa-times h1"></i>
+        </div>
+
+
+        <div class="container-fluid sidebar_search">
+          <div class="row">
+            <div class="col-12 mx-auto">
+              <div class="row">
+                <div class="col-12">
+                  <div id="services" class="body_left px-3 py-2 check_boxes">
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Category</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Delivery</label>
+                              </div>
+                            </div>
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Collection</label>
+                              </div>
+                            </div>
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Dine In</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Sort By</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Best Match</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Mínimum Order</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Customer Rating</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Delivery Fee</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Cuisines</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Pizza</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Fish & Chips</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Fast Food</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Chinese</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Thai</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Chicken</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Burger</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Desert</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">comfort Food</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Cury</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Cafe</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Breakfast</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Greek</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Burritos</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Donuts</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Cantonese</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Brunch</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Oriental</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Offers</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Best Match</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Mínimum Order</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Customer Rating</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Delivery Fee</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4 mb-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Hygine Rating</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div id="listData" class="mt-2">
+                        <div>
+                          <div id="rating-system3" class="rating_custom d-flex">
+                            <input id="rating-system" type="number" class="rating" min="1" max="5" step="0.8">
+                          </div>
+                          <p class="small text-secondary fw-light mt-2"><span id="rating3">3</span> Stars <span
+                              id="ratingE3">Good</span>
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Distance</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div id="listData5">
+                        <p class="f12 text-secondary fw-light mt-2">Radius around selected destination miles</p>
+
+                        <div id="rangeSlider2" class="slider_custom">
+                          <div class="slider-container">
+                            <div id="rangeSlider"></div>
+                          </div>
+                          <p class=" small text-secondary fw-light mt-2"><span id="sliderMin2">2</span> to <span
+                              id="sliderMax2">18</span> miles
+                          </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead">
+                        <h5>Rating</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+                      <div id="listData" class="mt-2">
+                        <div id="rating-system4" class="rating_custom">
+                          <input id="rating-system" type="number" class="rating" min="1" max="5" step="0.8">
+                          <p class="small text-secondary fw-light"><span id="rating4">2</span> Stars <span
+                              id="ratingE4">Poor</span></p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== SIDEBAR END ==== -->
+
+    <!-- HEADER START -->
+    <div class="
+            				header_container
+            				position-fixed
+            				top-0
+            				lef-0
+            				py-2 py-md-3
+                    bg-white
+                    shadow-sm
+            				w-100
+            			">
+      <div class="page_container">
+        <div class="container-fluid position-relative">
+          <div class="d-none d-md-block centerAb text-center">
+            <p class="fw-light f12 mb-0">Current Address</p>
+            <button onclick="dropDown2()" class="position-relative f14 mb-0 border-0 bg-transparent">WF8 4SQ,
+              Pontefract
+              <img class="ms-2 arrow" src="./assets/images/arrow2.svg" alt="">
+
+
+              <!-- POPUP START -->
+              <div id="logout_dropdown2" class="d-none logout_dropdown2 bg-white position-absolute">
+                <ul class="list-unstyled mb-0 py-1">
+                  <li class="fir1 pointer py-1 px-2 pt-2"><a class="text-decoration-none text-dark" href="">Lorem
+                      ipsum
+                      dolor sit amet.</a>
+                  </li>
+                  <li class="py-1 pointer px-2 pt-2"><a class="text-decoration-none text-dark" href="">Lorem ipsum
+                      dolor sit amet.</a>
+                  </li>
+                  <li class="py-1 pointer px-2 pt-2 pb-2 text-center"><a class="text-decoration-none text-dark"
+                      href="">Lorem ipsum
+                      dolor sit amet.</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- POPUP END -->
+              </a>
+            </button>
+
+
+          </div>
+
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="
+                              d-flex
+                              justify-content-center justify-content-md-between
+                              align-items-center
+                            ">
+                <div class="logo_container">
+                  <img src="assets/images/logo.png" alt="logo" />
+                </div>
+                <div class="d-none d-md-flex">
+                  <div>
+                    <a class="text-decoration-none h6 text-dark mb-0" href="">Join our network</a>
+                  </div>
+                  <div onclick="dropDown()" class=" ms-4 d-flex align-items-center position-relative">
+                    <a class="text-decoration-none h6 text-dark mb-0" href="JavaScript:void(0)"><img
+                        src="./assets/images/person2.svg" alt="" class="me-1">
+                      Yami
+                      Bankole <img class="ms-2 arrow" src="./assets/images/arrow2.svg" alt="">
+
+
+                      <!-- POPUP START -->
+                      <div id="logout_dropdown" class="d-none logout_dropdown bg-white position-absolute">
+                        <ul class="list-unstyled mb-0">
+                          <li class="fir1 pointer py-1 px-3 pt-3"><a class="text-decoration-none text-dark"
+                              href="">Order</a>
+                          </li>
+                          <li class="py-1 pointer px-3 pt-1 pb-2"><a class="text-decoration-none text-dark"
+                              href="">Account</a>
+                          </li>
+                          <li class="py-1 logout_btn text-center"><a class="text-decoration-none text-white"
+                              href="">Logout</a></li>
+                        </ul>
+                      </div>
+                      <!-- POPUP END -->
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- HUMBERGAR START -->
+              <div id="hambergerBtn" class="hamber_container d-block d-md-none position-absolute">
+                <i class="fas fa-bars text-dark"></i>
+              </div>
+              <!-- HUMBERGAR END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- CATEGORIES START -->
+    <div class="categories_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <h3>Categories</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDER START -->
+      <div class="inner_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div id="splide" class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide px-2 py-2">
+                      <div class="popularCard text-center">
+                        <img class="w-100" src="./assets/images/categories/i1.svg" alt="" />
+                        <h6 class="ms-2">Burger</h6>
+                      </div>
+                    </li>
+                    <li class="splide__slide px-2 py-2">
+                      <div class="popularCard text-center">
+                        <img class="w-100" src="./assets/images/categories/i2.svg" alt="" />
+                        <h6 class="ms-2">Pizza</h6>
+                      </div>
+                    </li>
+                    <li class="splide__slide px-2 py-2">
+                      <div class="popularCard text-center">
+                        <img class="w-100" src="./assets/images/categories/i2.svg" alt="" />
+                        <h6 class="ms-2">Pasta</h6>
+                      </div>
+                    </li>
+                    <li class="splide__slide px-2 py-2">
+                      <div class="popularCard text-center">
+                        <img class="w-100" src="./assets/images/categories/i2.svg" alt="" />
+                        <h6 class="ms-2">Sushi</h6>
+                      </div>
+                    </li>
+                    <li class="splide__slide px-2 py-2">
+                      <div class="popularCard text-center">
+                        <img class="w-100" src="./assets/images/categories/i2.svg" alt="" />
+                        <h6 class="ms-2">Chicken</h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SLIDER START -->
+    <!-- CATEGORIES END -->
+
+    <!-- BODY START -->
+    <div class="body_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="row">
+                <div class="d-none d-md-block col-md-4 col-xl-3">
+                  <div id="services2" class="body_left px-4 py-2 check_boxes">
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Category</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Delivery</label>
+                              </div>
+                            </div>
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Collection</label>
+                              </div>
+                            </div>
+                            <div class="col-6 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Dine In</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Sort By</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Best Match</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Mínimum Order</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Customer Rating</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Delivery Fee</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Cuisines</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Pizza</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Fish & Chips</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Fast Food</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Chinese</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Thai</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Chicken</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Burger</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Desert</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">comfort Food</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Cury</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Cafe</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Breakfast</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Greek</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Burritos</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Donuts</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Cantonese</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Brunch</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Oriental</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Offers</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div class="container-fluid px-3">
+                        <div id="listData" class="row">
+                          <div class="row gy-1">
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Best Match</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Mínimum Order</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Customer Rating</label>
+                              </div>
+                            </div>
+                            <div class="col-12 px-0">
+                              <div class="d-flex align-items-center">
+                                <label class="checkbox-label">
+                                  <input type="checkbox">
+                                  <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <label class="text-dark mb-0 mt-0" for="vehicle1">Delivery Fee</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4 mb-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Hygine Rating</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div id="listData" class="mt-2">
+                        <div>
+                          <div id="rating-system1" class="rating_custom d-flex">
+                            <input id="rating-system" type="number" class="rating" min="1" max="5" step="0.8">
+                          </div>
+                          <p class="small text-secondary fw-light mt-2"><span id="rating1">3</span> Stars <span
+                              id="ratingE1">Good</span></p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Distance</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+
+                      <div id="listData5">
+                        <p class="f12 text-secondary fw-light mt-2">Radius around selected destination miles</p>
+
+                        <div id="rangeSlider1" class="slider_custom my-3">
+                          <div class="slider-container">
+                            <div id="rangeSlider"></div>
+                          </div>
+                        </div>
+
+
+                        <p class="small text-secondary fw-light mt-2"><span id="sliderMin">2</span> to <span
+                            id="sliderMax">18</span> miles</p>
+                      </div>
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+
+                    <hr>
+
+                    <!-- UNDER LIST 1 START -->
+                    <div class="mt-4">
+                      <div class="d-flex justify-content-between align-items-center pointer toggleHead2">
+                        <h5>Rating</h5>
+                        <i class="fas fa-chevron-down mb-1 h6"></i>
+                      </div>
+                      <div id="listData" class="mt-2">
+                        <div id="rating-system2" class="rating_custom">
+                          <input id="rating-system" type="number" class="rating" min="1" max="5" step="0.8">
+                          <p class="small text-secondary fw-light"><span id="rating2">2</span> Stars <span
+                              id="ratingE2">Poor</span></p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- UNDER LIST 1 END -->
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-xl-9">
+                  <div
+                    class="seacrchCont d-flex flex-column flex-md-row align-content-start align-items-md-center w-100">
+                    <h6 class="mb-0 me-3">Search for item:</h6>
+                    <div class="searchField position-relative w-100 mt-2 mt-md-0">
+                      <input class="bg-white border-0 boxCont w-100 py-2" type="text"
+                        placeholder="Neopolitan pizza.." />
+                      <div class="searchIcon position-absolute">
+                        <i class="fas fa-search text-secondary"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex d-md-none justify-content-end">
+                      <button id="filterBtn" class="f14 shadow themeBtn py-2 px-3 text-white rounded-3 border-0 mt-4">
+                        <i class="bi bi-funnel"></i> Filter
+                      </button>
+                    </div>
+                  </div>
+
+
+                  <div id="resCards_container" class="resCards_container row gy-4 mt-1 mt-md-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BODY END -->
+
+
+      <!-- FOOTER START -->
+      <div class="footer_container">
+        <div class="page_container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-11 col-md-12 mx-auto">
+                <div class="row text-white">
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <h4 class="text-uppercase">quick links</h4>
+                    <a href="" class="small mb-2">About us</a>
+                    <a href="" class="small mb-2">Add your restaurant</a>
+                    <a href="" class="small mb-2">Deliver with us</a>
+                  </div>
+                  <div class="col-6 col-md-3 d-flex flex-column">
+                    <h4 class="text-uppercase">cuisines</h4>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                    <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                  </div>
+                  <div class="
+                    										col-6 col-md-3
+                    										contactUs
+                    										d-flex
+                    										flex-column
+                    										mt-5 mt-md-0
+                    									">
+                    <h4 class="text-uppercase">Contacs</h4>
+                    <a href=""><img src="./assets/images/footer/i1.svg" class="me-2" alt="">
+                      <span class="small">Market Walk, Unit G37b Wakefield - UK</span>
+                    </a>
+                    <a href=""><img src="./assets/images/footer/i2.svg" class="me-2" alt="">
+                      <span class="small"> 01977809750 </span>
+                    </a>
+                    <a href=""><img src="./assets/images/footer/i3.svg" class="me-3" alt=""><span
+                        class="small">info@tastyhasty.co.uk
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-md-3 d-flex flex-column mt-5 mt-md-0">
+                    <h4 class="text-uppercase">follow us</h4>
+                    <div class="followUsIcon d-flex align-items-center">
+                      <div><img src="./assets/images/footer/i4.svg" class="me-3" alt=""></div>
+                      <div><img src="./assets/images/footer/i5.svg" class="me-3" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy_write_container index py-2">
+        <div class="page_container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-11 col-md-12 mx-auto">
+                <img src="./assets/images/logo_white.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER END -->
+
+
+      <!-- SCRIPT TAGS START -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="assets/js/starjs/js/star-rating.min.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script>
+        $(document).ready(function ()
+        {
+          $('#rating-system1 #rating-system').rating('update', 3.4);
+          $('#rating-system2 #rating-system').rating('update', 2.6);
+          $('#rating-system3 #rating-system').rating('update', 3.4);
+          $('#rating-system4 #rating-system').rating('update', 2.6);
+
+          $('#rating-system1 #rating-system').on('rating:change', function (event, value, caption)
+          {
+            let updateVal = Math.floor(value);
+            document.getElementById("rating1").innerHTML = updateVal;
+
+            let ratingE1 = updateVal === 1 && "Poor" || updateVal === 2 && "Very Poor" || updateVal === 3 && "Good" || updateVal === 4 && "Very Good" || updateVal === 5 && "Excellent";
+            document.getElementById('ratingE1').innerHTML = ratingE1;
+          });
+
+          $('#rating-system2 #rating-system').on('rating:change', function (event, value, caption)
+          {
+            let updateVal = Math.floor(value);
+            document.getElementById("rating2").innerHTML = updateVal;
+
+            let ratingE2 = updateVal === 1 && "Poor" || updateVal === 2 && "Very Poor" || updateVal === 3 && "Good" || updateVal === 4 && "Very Good" || updateVal === 5 && "Excellent";
+            document.getElementById('ratingE2').innerHTML = ratingE2;
+          });
+
+          $('#rating-system3 #rating-system').on('rating:change', function (event, value, caption)
+          {
+            let updateVal = Math.floor(value);
+            document.getElementById("rating3").innerHTML = updateVal;
+
+            let ratingE3 = updateVal === 1 && "Poor" || updateVal === 2 && "Very Poor" || updateVal === 3 && "Good" || updateVal === 4 && "Very Good" || updateVal === 5 && "Excellent";
+            document.getElementById('ratingE3').innerHTML = ratingE3;
+          });
+
+          $('#rating-system4 #rating-system').on('rating:change', function (event, value, caption)
+          {
+            let updateVal = Math.floor(value);
+            document.getElementById("rating4").innerHTML = updateVal;
+
+            let ratingE4 = updateVal === 1 && "Poor" || updateVal === 2 && "Very Poor" || updateVal === 3 && "Good" || updateVal === 4 && "Very Good" || updateVal === 5 && "Excellent";
+            document.getElementById('ratingE4').innerHTML = ratingE4;
+          });
+
+
+          $("#rangeSlider1 #rangeSlider").slider({
+            range: true,
+            min: 0,
+            max: 20,
+            values: [2, 18],
+            slide: function (event, ui)
+            {
+              document.getElementById("sliderMin").innerHTML = ui.values[0];
+              document.getElementById("sliderMax").innerHTML = ui.values[1];
+            }
+          })
+
+          $("#rangeSlider2 #rangeSlider").slider({
+            range: true,
+            min: 0,
+            max: 20,
+            values: [2, 18],
+            slide: function (event, ui)
+            {
+              document.getElementById("sliderMin2").innerHTML = ui.values[0];
+              document.getElementById("sliderMax2").innerHTML = ui.values[1];
+            }
+          })
+        })
+
+        // HAMBERGER START GLOBAL
+        const sidebar = document.getElementById("sideBarId");
+        document.getElementById("hambergerBtn").addEventListener("click", () =>
+        {
+          sidebar.style.display = "block";
+          sidebar.style.opacity = "1";
+          sidebar.style.top = "0%";
+          sidebar.style.left = "0%";
+          sidebar.style.transform = "none";
+        });
+
+        function closeSidebar()
+        {
+          sidebar.style.display = "none";
+          sidebar.style.opacity = "0";
+          sidebar.style.transition = "1s all";
+        };
+        // HAMBERGER END GLOBAL
+
+        // FILTER START GLOBAL
+        const filter = document.getElementById("sideBarFilter");
+        document.getElementById("filterBtn").addEventListener("click", () =>
+        {
+          filter.style.display = "block";
+          filter.style.opacity = "1";
+          filter.style.top = "0%";
+          filter.style.left = "0%";
+          filter.style.transform = "none";
+        });
+
+        function closeFilter()
+        {
+          filter.style.display = "none";
+          filter.style.opacity = "0";
+          filter.style.transition = "1s all";
+        };
+        // FILTER END GLOBAL
+
+        // DROP DOWN FUNCTION
+        function dropDown()
+        {
+          document.getElementById("logout_dropdown").classList.toggle("d-none")
+        }
+
+        function dropDown2()
+        {
+          document.getElementById("logout_dropdown2").classList.toggle("d-none")
+        }
+
+        // PAGE ONE START
+        new Splide("#splide", {
+          type: "loop",
+          perPage: 7,
+          perMove: 1,
+          pagination: false,
+          arrows: false,
+          padding: "0px",
+          breakpoints: {
+            1100: {
+              perPage: 6,
+            },
+            940: {
+              perPage: 5,
+            },
+            810: {
+              perPage: 4,
+            },
+            710: {
+              perPage: 3,
+            },
+            575: {
+              perPage: 3,
+            },
+            500: {
+              perPage: 2,
+            },
+            360: {
+              perPage: 1,
+            },
+          }
+        }).mount();
+
+        // FOR LISTING SHOW AND HIDE START
+        var services = document.querySelector("#services");
+        services.addEventListener("click", function (e)
+        {
+          var target = e.target;
+          if (target.classList.contains("toggleHead"))
+          {
+            var serviceItem = target.parentNode;
+            var open = target.dataset.open === "true";
+            target.dataset.open = !open;
+            const innerTextData = serviceItem.children[0].children[1];
+            const innerTextData2 = serviceItem.children[1];
+            if (!open)
+            {
+              innerTextData2.style.display = "block";
+              serviceItem.style.height = "100%";
+              serviceItem.style.overflowX = "inherit";
+              innerTextData.classList.remove("fa-chevron-up");
+              innerTextData.classList.add("fa-chevron-down");
+            } else
+            {
+              innerTextData2.style.display = "none";
+              serviceItem.style.overflowX = "hidden";
+              innerTextData.classList.remove("fa-chevron-down");
+              innerTextData.classList.add("fa-chevron-up");
+            }
+          }
+        });
+
+        // FOR LISTING SHOW AND HIDE START
+        var services = document.querySelector("#services2");
+        services.addEventListener("click", function (e)
+        {
+          var target = e.target;
+          if (target.classList.contains("toggleHead2"))
+          {
+            var serviceItem = target.parentNode;
+            var open = target.dataset.open === "true";
+            target.dataset.open = !open;
+            const innerTextData = serviceItem.children[0].children[1];
+            const innerTextData2 = serviceItem.children[1];
+            if (!open)
+            {
+              innerTextData2.style.display = "block";
+              serviceItem.style.height = "100%";
+              serviceItem.style.overflowX = "inherit";
+              innerTextData.classList.remove("fa-chevron-up");
+              innerTextData.classList.add("fa-chevron-down");
+            } else
+            {
+              innerTextData2.style.display = "none";
+              serviceItem.style.overflowX = "hidden";
+              innerTextData.classList.remove("fa-chevron-down");
+              innerTextData.classList.add("fa-chevron-up");
+            }
+          }
+        });
+      </script>
+
+  </body>
+
+</html>

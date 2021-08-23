@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXTERNAL LINS START -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <!-- EXTERNAL LINS END -->
+    <title>Tasty</title>
+  </head>
+
+  <body>
+    <!-- ==== SIDEBAR START ==== -->
+    <div id="sideBarId" class="sideBar">
+      <div class="d-flex flex-column">
+        <div id="closeSidebar" onclick="closeSidebar()" class="align-self-start">
+          <i class="fas fa-times h1"></i>
+        </div>
+
+        <ul class="list-unstyled ps-4">
+          <li onclick="closeSidebar()" class="mt-3">
+            <a class="text-decoration-underline text-dark fw-bold" href="about.html">
+              Join our network
+            </a>
+          </li>
+          <li onclick="closeSidebar()" class="mt-3">
+            <a class="text-decoration-underline text-dark fw-bold" href="contact.html">
+              Sign up or log in
+            </a>
+          </li>
+        </ul>
+        <ul class="d-inline-flex list-unstyled icons ps-4 mt-2">
+          <li onclick="closeSidebar()">
+            <a class="h5 mx-3" target="_blank" href="http://facebook.com/">
+              <i class="fab fa-twitter text-dark h3"></i>
+            </a>
+          </li>
+          <li onclick="closeSidebar()">
+            <a class="h5" target="_blank" href="https://twitter.com/">
+              <i class="fab fa-facebook-f text-dark h3"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ==== SIDEBAR END ==== -->
+
+    <!-- HEADER START -->
+    <div class="
+    				header_container
+    				position-fixed
+    				top-0
+    				lef-0
+    				py-2 py-md-3
+    				w-100
+    			">
+      <div class="page_container">
+        <div class="container-fluid position-relative">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="
+                      d-flex
+                      justify-content-center justify-content-md-between
+                      align-items-center
+                    ">
+                <div class="logo_container">
+                  <img src="assets/images/logo_white.png" alt="logo" />
+                </div>
+                <div class="d-none d-md-flex">
+                  <div>
+                    <a class="jNetwork text-decoration-none h6 text-white mb-0" href="">Join our network</a>
+                  </div>
+                  <div onclick="dropDown()" class=" ms-4 d-flex align-items-center position-relative">
+                    <a class="text-decoration-none h6 text-white mb-0" href="JavaScript:void(0)"><img
+                        src="./assets/images/person.svg" alt="" class="me-1">
+                      Yami
+                      Bankole <img class="ms-2 arrow" src="./assets/images/arrow.svg" alt="">
+
+
+                      <!-- POPUP START -->
+                      <div id="logout_dropdown" class="d-none logout_dropdown bg-white position-absolute">
+                        <ul class="list-unstyled mb-0">
+                          <li class="fir1 pointer py-1 px-3 pt-3"><a class="text-decoration-none text-dark"
+                              href="">Order</a>
+                          </li>
+                          <li class="py-1 pointer px-3 pt-1 pb-2"><a class="text-decoration-none text-dark"
+                              href="">Account</a>
+                          </li>
+                          <li class="py-1 logout_btn text-center"><a class="text-decoration-none text-white"
+                              href="">Logout</a></li>
+                        </ul>
+                      </div>
+                      <!-- POPUP END -->
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- HUMBERGAR START -->
+              <div id="hambergerBtn" class="hamber_container d-block d-md-none position-absolute">
+                <i class="fas fa-bars text-white"></i>
+              </div>
+              <!-- HUMBERGAR END -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- HERO START -->
+    <div class="hero_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="hero_content">
+                <h1 class="text-white fw-light"><span class="fw600">Hungry?</span> Take out or dine in, <br
+                    class="d-none d-md-block" />
+                  we've got you <span class="fw600">covered</span></h1>
+                <h6 class="text-white py-2 py-sm-3">Simply add your address to find the best <br /> local
+                  restaurants
+                  and
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO END -->
+
+    <!-- INPUT START -->
+    <div class="under_input_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="inp_container position-relative ps-2 pe-1">
+                <input type="text" name="" placeholder="Search by address or postcode" class="w-100 me-3" id="">
+                <img class="searcg_icon position-absolute" src="./assets/images/search.svg" alt="">
+                <button class="border-0 text-white px-4 py-2 mb-0 d-flex align-items-center">
+                  <img class="me-2 filter_icon" src="./assets/images/filter.svg" alt="">
+                  Filter
+                </button>
+              </div>
+              <div class="check_boxes d-flex justify-content-around mt-3 mx-auto">
+                <div class="d-flex align-items-center">
+                  <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkbox-custom rectangular"></span>
+                  </label>
+                  <label class="text-dark ms-2 mb-0 mt-0" for="vehicle1">Delivery</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkbox-custom rectangular"></span>
+                  </label>
+                  <label class="text-dark ms-1" for="vehicle1">Collection</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="checkbox-custom rectangular"></span>
+                  </label>
+                  <label class="text-dark ms-1" for="vehicle1">Dine In</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- INPUT END -->
+
+    <!-- THREE CARDS START -->
+    <div class="three_cards_container">
+      <div class="page_container">
+        <div class="container-fluid position-relative">
+          <!-- IMAGES 1 START -->
+          <div class="zIndex ab_img_1 position-absolute bottom-0 end-0">
+            <img src="./assets/images/home/i1.svg" alt="">
+          </div>
+          <!-- IMAGES 1 END -->
+
+          <!-- IMAGES 2 START -->
+          <div class="zIndex ab_img_2 position-absolute top-0 start-0">
+            <img src="./assets/images/home/i2.svg" alt="">
+          </div>
+          <!-- IMAGES 2 END -->
+          <div class="row">
+            <div class="col-10 col-md-12 mx-auto">
+              <div class="text_content text-center px-4 mt-4 mb-5">
+                <h2 class="mb-2 fw-light">Our <span class="fw600">Features</span></h2>
+                <p class="fw-light f14">Simply add your address to find the best
+                  local restaurants and
+                </p>
+              </div>
+
+
+              <div class="three_inner_cont row justify-content-center gy-5 gy-sm-4 gy-md-0">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="single_card bg-white">
+                    <img class="w-100" src="assets/images/cards/i1.png" alt="">
+                    <div class="text_content text-center px-4">
+                      <h5 class="mb-2">Hasty Delivery</h5>
+                      <p class="fw-light f14">Become a delivery rider with TastyHasty, work around your lifestyle,
+                        earn
+                        competitive pay and
+                        get
+                        paid weekly.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="single_card bg-white">
+                    <img class="w-100" src="assets/images/cards/i2.png" alt="">
+                    <div class="text_content text-center px-4">
+                      <h5 class="mb-2">Easy Order</h5>
+                      <p class="fw-light f14">Order your Tasty food form a platform that offers a great Loyalty
+                        scheme
+                        and
+                        Unlimited
+                        discounts
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="single_card bg-white">
+                    <img class="w-100" src="assets/images/cards/i3.png" alt="">
+                    <div class="text_content text-center px-4">
+                      <h5 class="mb-2">Serve Tasty Food Online
+                      </h5>
+                      <p class="fw-light f14">Bring your restaurant online, reach new customers, reward, and
+                        retain
+                        existing
+                        ones, all at low
+                        commission rates on
+                        orders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- THREE CARDS END -->
+
+    <!-- SCHEMES START -->
+    <div class="schemes_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="top_content text-center">
+                <h2 class="fw-light mb-3">TastyHasty <span class="fw600">Loyalty Scheme</span></h2>
+                <p class="mx-auto">Get rewarded up to £6 on every 5 orders placed on TastyHasty. Earn from both
+                  TastyHasty and your
+                  favourite restaurants.</p>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="bg-white boxCont py-5 px-4 px-md-2">
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                      <div class="first mx-auto text-center">
+                        <img src="assets/images/scheme/i1.svg" alt="">
+                      </div>
+                      <div class="second text-center text-md-start mt-4 mt-md-0">
+                        <h4>Save your rewards</h4>
+                        <p class="mb-0 fw-light">Save your rewards, watch them grow to claim for special
+                          occassions.
+                          TastyHasty
+                          rewards are
+                          valid for 12 months.</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row align-items-center mt-5">
+                      <div class="first mx-auto text-center">
+                        <img src="assets/images/scheme/i2.svg" alt="">
+                      </div>
+                      <div class="second text-center text-md-start mt-4 mt-md-0">
+                        <h4>Donate your rewards to charity
+                        </h4>
+                        <p class="mb-0 fw-light">Donate part or all your rewards to the charity you support.
+                          Simply
+                          search for
+                          the Charity
+                          name
+                          and complete the donation
+                          process. If not on the list, you can recommend the charity and we will set up an account
+                          with
+                          them.</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row align-items-center mt-5">
+                      <div class="first mx-auto text-center">
+                        <img src="assets/images/scheme/i3.svg" alt="">
+                      </div>
+                      <div class="second text-center text-md-start mt-4 mt-md-0">
+                        <h4>Use your rewards as gifts
+                        </h4>
+                        <p class="mb-0 fw-light">You can transfer your rewards to friends and family as gifts, all
+                          they
+                          need is a
+                          TastyHasty
+                          account. Simply type in
+                          their Customer ID and complete the rest of the process.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCHEMES END -->
+
+    <!-- BLOGS START -->
+    <div class="blogs_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="row">
+                <div class="col-12">
+                  <div class="single_card fir d-flex flex-column flex-md-row bg-white align-items-center boxCont">
+                    <div class="first position-relative">
+                      <img src="assets/images/blogs/i1.png" alt="">
+                      <button class="position-absolute sign_up_button">Sign Up Now</button>
+                    </div>
+                    <div class="second px-3 px-md-4 ms-md-4 pt-5 pb-5 pt-md-0 pb-md-0">
+                      <h4>NHS Loyalty Rewards</h3>
+                        <p class="fw-light mb-0 f14">Do you work for the NHS or the Healthcare industry? Sign up and
+                          earn up
+                          to
+                          £10 on every 5
+                          orders placed on TastyHasty
+                          from TastyHasty and our restaurant partners offering NHS discounts.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                  <div class="single_card sec d-flex flex-column flex-md-row bg-white align-items-center boxCont">
+                    <div class="first position-relative">
+                      <img src="assets/images/blogs/i2.png" alt="">
+                      <button class="position-absolute sign_up_button">Sign Up Now</button>
+                    </div>
+                    <div class="second px-3 px-md-4 ms-md-4 pt-5 pb-5 pt-md-0 pb-md-0">
+                      <h4>Tasty Weekend</h4>
+                      <p class="fw-light mb-0 f14">Every weekend from 5pm Friday to 9pm Sunday, all signed up
+                        TastyHasty
+                        customers get £2 off
+                        their first order.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                  <div class="single_card d-flex flex-column flex-md-row bg-white align-items-center boxCont">
+                    <div class="first position-relative">
+                      <img src="assets/images/blogs/i3.png" alt="">
+                      <button class="position-absolute sign_up_button">Sign Up Now</button>
+                    </div>
+                    <div class="second px-3 px-md-4 ms-md-4 pt-5 pb-5 pt-md-0 pb-md-0">
+                      <h4>Monthly Tasty Rafle</h3>
+                        <p class="fw-light mb-0 f14">Every weekend from 5pm Friday to 9pm Sunday, all signed up
+                          TastyHasty
+                          customers get £2 off
+                          their first orderWe are giving away loads of £20 TastyHasty credits on the last day of
+                          the
+                          month. Just place one order and you’re
+                          automatically enrolled for the monthly draw.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BLOGS END -->
+
+
+    <!-- THREE CARDS START -->
+    <div class="refer_container position-relative">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-10 col-md-12 mx-auto">
+              <div class="text_content text-center px-4 mt-4 mb-5">
+                <h3 class="mb-2 fw-light"><span class="fw600">Refer</span> Someones</h5>
+                  <p class="fw-light f14">Get rewarded up to £6 on every 5 orders placed on TastyHasty. Earn from
+                    both
+                    TastyHasty and your favourite restaurants.
+                  </p>
+              </div>
+
+
+              <div class="three_inner_cont justify-content-center row gy-5 gy-md-0">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="position-relative bg-white">
+                    <img class="w-100" src="assets/images/cards/i1.png" alt="">
+                    <button class="position-absolute sign_up_button">Sign Up Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="position-relative bg-white">
+                    <img class="w-100" src="assets/images/cards/i2.png" alt="">
+                    <button class="position-absolute sign_up_button">Sign Up Now</button>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="position-relative bg-white">
+                    <img class="w-100" src="assets/images/cards/i3.png" alt="">
+                    <button class="position-absolute sign_up_button">Sign Up Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- THREE CARDS END -->
+
+
+    <!-- FOOTER START -->
+    <div class="footer_container">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <div class="row text-white">
+                <div class="col-6 col-md-3 d-flex flex-column">
+                  <h4 class="text-uppercase">quick links</h4>
+                  <a href="" class="small mb-2">About us</a>
+                  <a href="" class="small mb-2">Add your restaurant</a>
+                  <a href="" class="small mb-2">Deliver with us</a>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column">
+                  <h4 class="text-uppercase">cuisines</h4>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Burger</a>
+                  <a href="" class="small mb-2" class="small mb-2" class="small mb-2">Chicken</a>
+                </div>
+                <div class="
+                          										col-6 col-md-3
+                          										contactUs
+                          										d-flex
+                          										flex-column
+                          										mt-5 mt-md-0
+                          									">
+                  <h4 class="text-uppercase">Contacs</h4>
+                  <a href=""><img src="./assets/images/footer/i1.svg" class="me-2" alt="">
+                    <span class="small">Market Walk, Unit G37b Wakefield - UK</span>
+                  </a>
+                  <a href=""><img src="./assets/images/footer/i2.svg" class="me-2" alt="">
+                    <span class="small"> 01977809750 </span>
+                  </a>
+                  <a href=""><img src="./assets/images/footer/i3.svg" class="me-3" alt=""><span
+                      class="small">info@tastyhasty.co.uk
+                    </span>
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column mt-5 mt-md-0">
+                  <h4 class="text-uppercase">follow us</h4>
+                  <div class="followUsIcon d-flex align-items-center">
+                    <div><img src="./assets/images/footer/i4.svg" class="me-3" alt=""></div>
+                    <div><img src="./assets/images/footer/i5.svg" class="me-3" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="copy_write_container index py-2">
+      <div class="page_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+              <img src="./assets/images/logo_white.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER END -->
+
+
+    <!-- SCRIPT TAGS START -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      $(document).ready(function ()
+      {
+        var header = document.querySelector(".header_container");
+
+
+        $(window).scroll(function ()
+        {
+          var scroll = $(window).scrollTop();
+          //>=, not <=
+          if (scroll >= 1)
+          {
+            header.classList.add("sticky");
+          } else
+          {
+            header.classList.remove("sticky");
+          }
+        });
+
+
+      });
+
+
+
+      // DROP DOWN FUNCTION
+      function dropDown()
+      {
+        document.getElementById("logout_dropdown").classList.toggle("d-none")
+      }
+
+      // HAMBERGER START GLOBAL
+      const sidebar = document.getElementById("sideBarId");
+      document.getElementById("hambergerBtn").addEventListener("click", () =>
+      {
+        sidebar.style.display = "block";
+        sidebar.style.opacity = "1";
+        sidebar.style.top = "0%";
+        sidebar.style.left = "0%";
+        sidebar.style.transform = "none";
+        console.log("object");
+      });
+
+      function closeSidebar()
+      {
+        sidebar.style.display = "none";
+        sidebar.style.opacity = "0";
+        sidebar.style.transition = "1s all";
+      };
+      // HAMBERGER END GLOBAL
+    </script>
+  </body>
+
+</html>

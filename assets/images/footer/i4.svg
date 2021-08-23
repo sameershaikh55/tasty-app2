@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6921e"/>
+      <stop offset="1" stop-color="#ee4036"/>
+    </linearGradient>
+  </defs>
+  <path id="iconfinder_Circled_Facebook_svg_5279111" d="M17.433,35h0Zm.123,0h0Zm-.177,0h0Zm.233,0h0Zm-.285,0h0Zm.341,0h0Zm.056,0h0Zm-.463,0h0Zm.52,0h0Zm-.574,0h0Zm.631,0h0Zm-.682,0h0Zm-.064,0h0Zm.8,0h0Zm-.859,0h0Zm.915,0h0Zm.056,0h0Zm-1.023,0h0Zm-.049,0h0Zm1.129,0h0Zm.056,0h0Zm-1.256,0h0Zm-.051,0h0Zm1.363,0h0Zm-1.413,0h0Zm1.469,0h0Zm-1.54,0h0Zm1.6,0h0Zm-1.646,0h0Zm1.7,0h0Zm-1.752,0h0Zm1.808,0h0Zm.056,0h0Zm-1.909,0h0Zm1.965,0H18.5l.028,0Zm-2.04,0,.028,0h-.028Zm-.049,0,.028,0h-.028Zm2.145,0H18.55l.028,0Zm-2.192,0,.025,0h-.023l-.023,0h.022Zm2.248,0H18.6l.025,0h.022Zm.056,0h-.008l.026,0h-.018Zm-2.376,0,.026,0H16.3Zm-.049,0,.026,0h-.026Zm2.481,0H18.72l.026,0Zm-2.53,0,.024,0H16.2Zm2.585,0h-.019l.024,0H18.79Zm-2.652-.005.021,0h-.021Zm2.707,0h-.005l.021,0Zm.055,0h-.01l.021,0Zm-2.813,0,.021,0h-.021Zm-.05,0,.018,0h-.018Zm2.919,0h-.013l.018,0Zm-2.973-.005h0Zm3.028,0h0Zm.055,0h0Zm-3.142,0h0Zm-.051,0h0Zm3.249,0h0Zm-4.357-.138a17.5,17.5,0,1,1,5.469,0V22.559h4.078l.776-5.059H20.234V14.217a2.529,2.529,0,0,1,2.852-2.733h2.207V7.178a26.911,26.911,0,0,0-3.917-.342c-4,0-6.61,2.423-6.61,6.809V17.5H10.322v5.059h4.443Z" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+</svg>
