@@ -792,6 +792,12 @@ body {
 		}
 	}
 
+	.share_icons {
+		img {
+			max-width: 150px;
+		}
+	}
+
 	.contactUs {
 		a {
 			font-size: 1.2rem;
@@ -1103,6 +1109,9 @@ body {
 	}
 	.categories_container {
 		margin-top: 7rem;
+	}
+	.footer_container .share_icons img {
+		max-width: 115px;
 	}
 }
 
